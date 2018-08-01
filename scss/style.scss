@@ -1,15 +1,15 @@
 body {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
 }
 
 form {
     font-size: 1rem;
+    margin: 0rem;
 }
 
 input[type="radio"] {
-   visibility: hidden;
+    visibility: hidden;
     position: absolute;
 }
 
@@ -20,7 +20,7 @@ input[type="radio"] + label {
     i {
         margin-top: .2rem;
         margin-left: .8rem;
-        color: rgb(116, 116, 116);
+        color: rgb(52, 126, 223);
     }
 }
 
@@ -32,15 +32,48 @@ input[type="radio"] + label::before {
     height: 2.6rem;
     border-radius: .2rem;
     background-color: rgba(255, 255, 255, 0.6);
-
-
-   
 }
+
 input[type="radio"]:checked + label::before {
     background-color: rgba(255, 255, 255, 0);
    
 }
 
+input[type="checkbox"] {
+    position: relative;
+    padding-left: 2rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+
+input[type="checkbox"]::before, input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(52, 126, 223);
+    border-radius: 10%;
+}
+
+input[type="checkbox"]:checked {
+    left: 1rem;
+}
+
+div.switch {
+    position: absolute;
+    width: 2rem;
+    height: 1rem;
+    border: .1rem solid rgb(52, 126, 223);
+    border-radius: 10%;
+    margin-top: .91rem;
+    margin-left: .15rem;
+}
+p#opis {
+    font-size: .8rem;
+    margin-bottom: 0rem;
+}
+
 input[type="submit"] {
-margin-top: 1rem;
+    margin-top: 2rem;
 }
